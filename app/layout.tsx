@@ -9,7 +9,16 @@ import Footer from "@/components/Footer";
 //ThemeProvider
 import ThemeProvider from "@/context/ThemeProvider";
 
-const inter = Inter({ subsets: ["latin"] });
+//Font
+import { Sen } from "next/font/google";
+
+const SenFont = Sen({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={SenFont.className}>
         <ThemeProvider attribute='class' defaultTheme='light'>
           <Header />
           {children}
