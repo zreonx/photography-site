@@ -33,10 +33,15 @@ const Hero = () => {
             {/* subscribe button */}
             <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>
               <div className='flex w-full gap-x-4 '>
-                <label htmlFor='email-address' className='sr-only'>
+                <label htmlFor='email-address' className='sr-only '>
                   Email Adress
                 </label>
-                <Input type='email' id='email' placeholder='Email' />
+                <Input
+                  type='email'
+                  id='email'
+                  placeholder='Email'
+                  className='dark:border-gray-600'
+                />
                 <Link href='/contact'>
                   <Button className='gap-x-2 bg-black'>
                     Subscribe <RiMenFill size={18} />
