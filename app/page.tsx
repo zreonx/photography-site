@@ -1,5 +1,6 @@
 import Faq from "@/components/Faq";
 import Features from "@/components/Features";
+
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import NewsLetter from "@/components/Newsletter";
