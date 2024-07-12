@@ -87,9 +87,10 @@
   @apply z-10 w-[250px] px-16 h-[90px] bg-primary dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-full flex items-center gap-x-4;
 }
 
-.swiper-horizontal > .section-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-.swiper-pagination-bullets {
+span.swiper-pagination-bullets-active {
   @apply bg-primary
 }
 
+.swiper-pagination-bullet, .wiper-pagination-bullet-active {
+  @apply !bg-primary
+}

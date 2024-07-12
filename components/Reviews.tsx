@@ -66,14 +66,14 @@ const Reviews = () => {
           }}
           navigation
           pagination={{ clickable: true }}
-          className='  h-[390px] md:h-[500px] lg:h-[400px]'
+          className='  h-[420px] md:h-[600px] lg:h-[400px]'
         >
           {reviewsData.map((person, index) => (
             <React.Fragment key={index}>
               <SwiperSlide>
-                <Card className='p-8 min-h-[300px]'>
+                <Card className='p-8 min-h-[300px] hover:bg-tertiary transition-all cursor-pointer'>
                   <CardHeader className='p-0 mb-3'>
-                    <div className='flex flex-col items-start gap-x-4'>
+                    <div className='flex flex-col items-start  gap-x-4'>
                       {/* Avatar */}
                       <Image
                         src={person.avatar}

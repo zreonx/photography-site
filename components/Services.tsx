@@ -49,7 +49,6 @@ const Services = () => {
                 </div>
               </CardHeader>
               <CardContent className='text-center'>
-                +
                 <CardDescription className='text-lg'>
                   {item.description}
                 </CardDescription>
