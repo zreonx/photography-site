@@ -69,33 +69,31 @@ const Reviews = () => {
           className='  h-[420px] md:h-[600px] lg:h-[400px]'
         >
           {reviewsData.map((person, index) => (
-            <React.Fragment key={index}>
-              <SwiperSlide>
-                <Card className='p-8 min-h-[300px] hover:bg-tertiary transition-all cursor-pointer'>
-                  <CardHeader className='p-0 mb-3'>
-                    <div className='flex flex-col items-start  gap-x-4'>
-                      {/* Avatar */}
-                      <Image
-                        src={person.avatar}
-                        width={70}
-                        height={70}
-                        alt=''
-                        priority
-                        className='mb-2'
-                      />
-                      {/* Name */}
-                      <div className='flex flex-col'>
-                        <CardTitle>{person.name}</CardTitle>
-                        <p>{person.job}</p>
-                      </div>
+            <SwiperSlide key={index}>
+              <Card className='p-8 min-h-[300px] hover:bg-tertiary transition-all cursor-pointer'>
+                <CardHeader className='p-0 mb-3'>
+                  <div className='flex flex-col items-start  gap-x-4'>
+                    {/* Avatar */}
+                    <Image
+                      src={person.avatar}
+                      width={70}
+                      height={70}
+                      alt=''
+                      priority
+                      className='mb-2'
+                    />
+                    {/* Name */}
+                    <div className='flex flex-col'>
+                      <CardTitle>{person.name}</CardTitle>
+                      <p>{person.job}</p>
                     </div>
-                  </CardHeader>
-                  <CardDescription className='text-lg text-muted-foreground'>
-                    {person.review}
-                  </CardDescription>
-                </Card>
-              </SwiperSlide>
-            </React.Fragment>
+                  </div>
+                </CardHeader>
+                <CardDescription className='text-lg text-muted-foreground'>
+                  {person.review}
+                </CardDescription>
+              </Card>
+            </SwiperSlide>
           ))}
         </Swiper>
       </div>

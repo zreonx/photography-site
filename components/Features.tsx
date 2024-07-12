@@ -57,7 +57,7 @@ const Features = () => {
             {features.map((feature, index) => (
               <div
                 className='relative hover:scale-105 transition-all'
-                key={feature.name}
+                key={index}
               >
                 <dt className='text-base font-semibold leading-7 text-muted-foreground justify-center'>
                   <div className='flex flex-col w-[100px] h-[100px] bg-primary rounded-full items-center mb-4 justify-center'>

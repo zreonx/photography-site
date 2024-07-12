@@ -28,9 +28,7 @@ const Socials = ({ containerStyles, iconStyles }: SocialProps) => {
       {icons.map((icon, index) => (
         <React.Fragment key={index}>
           <Link href={icon.path}>
-            <div className={`${iconStyles}`} key={index}>
-              {icon.name}
-            </div>
+            <div className={`${iconStyles}`}>{icon.name}</div>
           </Link>
         </React.Fragment>
       ))}

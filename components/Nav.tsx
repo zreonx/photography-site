@@ -61,7 +61,7 @@ const Nav = ({
             {link.path === path && (
               <motion.span
                 initial={{ y: "-100%" }}
-                animate={{ type: "tween" }}
+                // animate={{ type: "tween" }}
                 layoutId='underline'
                 className={`${underlineStyles}`}
               ></motion.span>
