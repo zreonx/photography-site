@@ -6,6 +6,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+//Toast
+import { Toaster } from "@/components/ui/toaster";
+
 //ThemeProvider
 import ThemeProvider from "@/context/ThemeProvider";
 
@@ -37,6 +40,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
