@@ -3,30 +3,7 @@ import React from "react";
 
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { ButtonProps } from "./ui/button";
-
-const links = [
-  {
-    path: "/",
-    name: "home",
-  },
-  {
-    path: "/about",
-    name: "about",
-  },
-  {
-    path: "/portfolio",
-    name: "portfolio",
-  },
-  {
-    path: "/pricing",
-    name: "pricing",
-  },
-  {
-    path: "/contact",
-    name: "contact",
-  },
-];
+import { links } from "@/lib/data";
 
 type NavProps = {
   containerStyles: string;

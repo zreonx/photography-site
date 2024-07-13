@@ -4,16 +4,9 @@ import Image from "next/image";
 import { Badge } from "./ui/badge";
 import { Group, Link2Icon } from "lucide-react";
 import Link from "next/link";
+import { projectData } from "@/lib/data";
 
-type ProjectType = {
-  image: string;
-  category: string;
-  name: string;
-  description: string;
-  link: string;
-  codepen: string;
-};
-
+type ProjectType = (typeof projectData)[0];
 type ProjectCartType = {
   project: ProjectType;
 };
